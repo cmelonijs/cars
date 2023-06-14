@@ -1,15 +1,15 @@
-import { Footer, Navbar } from '../../components'
-import './globals.css'
+import { Footer, Navbar } from "../../components";
+import "./globals.css";
 
 export const metadata = {
-  title: 'Car Rental',
-  description: 'Carlo Marcia',
-}
+  title: "Car Rental",
+  description: "Carlo Marcia",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -19,5 +19,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-  )
+  );
 }
