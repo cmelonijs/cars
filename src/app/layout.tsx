@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata = {
   title: 'Car Rental',
-  description: 'Discover the best cars for rent in your area.',
+  description: 'Carlo Marcia',
 }
 
 export default function RootLayout({
