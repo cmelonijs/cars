@@ -7,11 +7,12 @@ type CustomButtonProps = {
     title: string;
     containerStyles?: string;
     handleClick?: MouseEventHandler<HTMLButtonElement>;
+    buttonType?: "button" | "submit" | "reset";
 }
 
-const CustomButton = ({title, containerStyles, handleClick}: CustomButtonProps) => {
+const CustomButton = ({title, containerStyles, handleClick, buttonType}: CustomButtonProps) => {
     return (
-        <button onClick={handleClick} disabled={false} type={"button"} className={`custom-btn ${containerStyles}`}>
+        <button onClick={handleClick} disabled={false} type={buttonType} className={`custom-btn ${containerStyles}`}>
             <span className={`flex-1`}>
                 {title}
             </span>
