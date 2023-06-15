@@ -14,6 +14,7 @@ export interface Car {
   make: string,
   model: string,
   transmission: string,
+  year: number
 }
 
 export default async function Home() {

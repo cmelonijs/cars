@@ -8,6 +8,9 @@ type CustomButtonProps = {
   containerStyles?: string;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
   buttonType?: "button" | "submit" | "reset";
+  textStyles?: string;
+  rightIcon?: string;
+  isDisabled?: boolean;
 };
 
 const CustomButton = ({
@@ -15,6 +18,9 @@ const CustomButton = ({
   containerStyles,
   handleClick,
   buttonType,
+  textStyles,
+  rightIcon,
+  isDisabled,
 }: CustomButtonProps) => {
   return (
     <button
@@ -23,7 +29,10 @@ const CustomButton = ({
       type={buttonType}
       className={`custom-btn ${containerStyles}`}
     >
-      <span className={`flex-1`}>{title}</span>
+      <span className={`flex-1 ${textStyles}`}>{title}</span>
+      {rightIcon && (
+        <Image src={rightIcon} width={20} height={20} alt="right-arrow" />
+      )}
     </button>
   );
 };
