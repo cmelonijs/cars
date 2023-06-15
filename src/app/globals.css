@@ -128,7 +128,7 @@
 }
 
 .car-card__btn-container {
-  @apply  group-hover:flex  bottom-0 w-full z-10;
+  @apply group-hover:flex  bottom-0 w-full z-10;
 }
 /* END: Car Card styles */
 

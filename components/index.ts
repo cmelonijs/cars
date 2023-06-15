@@ -15,5 +15,5 @@ export {
   Searchbar,
   SearchManufacturer,
   CustomFilter,
-  CarCard
+  CarCard,
 };
